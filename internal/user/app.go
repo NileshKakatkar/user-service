@@ -6,8 +6,8 @@ import (
 	"log"
 )
 
-func NewApp(cfg Config, dbURL string) (*fiber.App, error) {
-	db, err := openDatabase(dbURL)
+func NewApp(cfg Config) (*fiber.App, error) {
+	db, err := openDatabase(cfg.DatabaseURL)
 	if err != nil {
 		return nil, err
 	}

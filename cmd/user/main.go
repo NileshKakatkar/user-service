@@ -8,7 +8,7 @@ import (
 
 func main() {
 	cfg := user.LoadConfig()
-	app, err := user.NewApp(cfg, cfg.DatabaseURL)
+	app, err := user.NewApp(cfg)
 	if err != nil {
 		log.Fatal(err)
 	}
