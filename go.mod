@@ -2,7 +2,7 @@ module github.com/nilesh/user-service
 
 go 1.23
 
-replace github.com/nilesh/shopcore-contracts => ../contracts
+replace github.com/nilesh/shopcore-contracts => ../shared/grpc
 
 require (
 	github.com/nilesh/shopcore-contracts v0.0.0
